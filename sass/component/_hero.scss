@@ -1,0 +1,62 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../image/Header-opt.jpg);
+  block-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $footer-color;
+
+  text-align: center;
+
+  @media screen and (min-width: $mobile) {
+    max-width: $mobile;
+    height: 400px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    max-width: $tablet;
+    height: 400px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: 1600px;
+    height: 600px;
+  }
+
+  .title {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    color: $primary-white-color;
+
+    font-weight: 900;
+
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  @media screen and (min-width: $mobile) {
+    font-size: 24px;
+    line-height: 1.61;
+  }
+
+  @media screen and (min-width: $tablet) {
+    font-size: 26px;
+    line-height: 1.61;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}

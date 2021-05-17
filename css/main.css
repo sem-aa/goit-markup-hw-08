@@ -549,17 +549,6 @@ h6 {
   margin-right: -15px;
 }
 
-@media screen and (min-width: 1200px) {
-  .footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-}
-
 .footer .adres {
   margin-bottom: 60px;
 }
@@ -623,6 +612,18 @@ h6 {
   background-color: #2196f3;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: auto;
+  }
+}
+
 .contact {
   color: #ffffff;
   text-transform: uppercase;
@@ -674,6 +675,7 @@ h6 {
 @media screen and (min-width: 1200px) {
   .contact-lebel .form-footer .input-footer {
     margin-right: 12px;
+    width: 350px;
   }
 }
 
@@ -703,6 +705,14 @@ h6 {
             justify-content: space-between;
     margin-left: 80px;
     margin-right: 80px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .tablet-flex {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
   }
 }
 

@@ -549,8 +549,25 @@ h6 {
   margin-right: -15px;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .footer .adres {
   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer .adres {
+    margin-right: 70px;
+  }
 }
 
 .footer .adres .text-adres {
@@ -614,8 +631,24 @@ h6 {
   line-height: 1.17;
 }
 
+@media screen and (min-width: 1200px) {
+  .contact {
+    text-align: left;
+  }
+}
+
 .contact-lebel {
   margin-top: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-lebel .form-footer {
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 0px;
+  }
 }
 
 .contact-lebel .form-footer .input-footer {
@@ -635,6 +668,12 @@ h6 {
 @media screen and (min-width: 768px) {
   .contact-lebel .form-footer .input-footer {
     width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-lebel .form-footer .input-footer {
+    margin-right: 12px;
   }
 }
 
